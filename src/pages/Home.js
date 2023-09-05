@@ -33,6 +33,7 @@ function Home() {
             title="IFrame 1"
             id="iframe1"
             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+            muted // Add the muted attribute to mute the iframe
           ></iframe>
         </div>
 
