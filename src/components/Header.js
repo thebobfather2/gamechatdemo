@@ -30,7 +30,7 @@ function Header({ handlePageChange, currentPage }) {
   return (
     <header
       style={{
-        display: 'flex',
+        display: 'none',
         alignItems: 'center',
         color: '#ffffff',
         backgroundColor: '#000000',
