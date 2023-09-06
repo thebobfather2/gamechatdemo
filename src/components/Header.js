@@ -3,37 +3,20 @@ import Navbar from './Navbar';
 import './style.css';
 
 function Header({ handlePageChange, currentPage }) {
-  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
-  const [mouseY, setMouseY] = useState(0);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(false);
 
+  // Set isHeaderVisible to false when the component mounts
   useEffect(() => {
-    // Add an event listener to track mouse position
-    const handleMousePosition = (e) => {
-      setMouseY(e.clientY);
-    };
-
-    window.addEventListener('mousemove', handleMousePosition);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMousePosition);
-    };
+    setIsHeaderVisible(false);
   }, []);
-
-  useEffect(() => {
-    // Define the threshold (e.g., 50 pixels from the top)
-    const threshold = 130;
-
-    // Check if the mouse is close enough to the top to keep the header visible
-    setIsHeaderVisible(mouseY <= threshold);
-  }, [mouseY]);
 
   return (
     <header
       style={{
         display: 'flex',
         alignItems: 'center',
-        color: 'none',
-        backgroundColor: 'none',
+        color: '#ffffff',
+        backgroundColor: '#000000',
         position: 'relative',
         transform: `translateY(${isHeaderVisible ? 0 : '-100%'})`,
         transition: 'transform 0.3s ease', // Adjust the duration and easing as needed
@@ -47,7 +30,11 @@ function Header({ handlePageChange, currentPage }) {
           color: '#ffffff',
         }}
       >
+        <a href="/" style={{ display: 'block' }}>
+          <img src="./img/vsnlogo.png" style={{ width: '70px', marginLeft: '30px' }} alt="Logo" />
+        </a>
       </h1>
+      <Navbar handlePageChange={handlePageChange} currentPage={currentPage} />
     </header>
   );
 }

@@ -1,9 +1,13 @@
 .MainContainer {
-    background-color: #000000;
-    color: #ffffff;
-    text-shadow: 1px 1px #00000050;
-    text-align: center;
-}
+    margin: 0;
+    padding: 0;
+    /* Add other styles as needed */
+  }
+  .iframeContainer {
+    margin: 0;
+    padding: 0;
+    /* Add other styles as needed */
+  }
 
 .mainText {
     color: black;
@@ -17,11 +21,5 @@
 
 /* mobile styles */
 @media only screen and (max-width: 600px) {
-    .MainContainer {
-        min-height: 500px;
-    }
 
-    .imgHome {
-        width: 50%;
-    }
 }
