@@ -58,12 +58,22 @@ function Home() {
           src="https://vsirgaming.vercel.app/VSIR"
             title="IFrame 2"
             id="iframe2"
-            style={{ position: 'absolute', top: "90px", right: '30px', width: '35%', height: '35%' }}
+            style={{ position: 'absolute', top: "70px", right: '30px', width: '35%', height: '35%' }}
+          ></iframe>
+        </div>
+
+                {/* Iframe 3 */}
+                <div style={{iframeContainerStyle, display: iframe2Visible ? 'block' : 'none' }}>
+          <iframe
+          src="https://widget.mibbit.com/?settings=b7d60454a33e30fe1ce470368ee12bc4&server=irc.mibbit.net%3A%2B6697&channel=%23bap0006_test"
+            title="IFrame 3"
+            id="iframe3"
+            style={{ position: 'absolute', top: "350px", right: '30px', width: '35%', height: '52%' }}
           ></iframe>
         </div>
       </section>
         {/* Button to toggle iframe2 visibility */}
-        <button style={buttonStyle} onClick={toggleIframe2}>Show/Hide Music</button>
+        <button style={buttonStyle} onClick={toggleIframe2}>Show/Hide VSN</button>
     </main>
   );
 }
