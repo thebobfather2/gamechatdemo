@@ -26,7 +26,7 @@ function Home() {
         {/* Iframe 2 */}
         <div style={iframeContainerStyle}>
           <iframe
-          src="https://vsnreact.herokuapp.com/VSIR"
+          src="https://vsirgaming.vercel.app/VSIR"
             title="IFrame 2"
             id="iframe2"
             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
