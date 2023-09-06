@@ -68,7 +68,7 @@ function Home() {
           src="https://widget.mibbit.com/?settings=b7d60454a33e30fe1ce470368ee12bc4&server=irc.mibbit.net%3A%2B6697&channel=%23bap0006_test"
             title="IFrame 3"
             id="iframe3"
-            style={{ position: 'absolute', top: "350px", right: '30px', width: '35%', height: '52%' }}
+            style={{ position: 'absolute', top: "400px", right: '30px', width: '35%', height: '40%' }}
           ></iframe>
         </div>
       </section>
