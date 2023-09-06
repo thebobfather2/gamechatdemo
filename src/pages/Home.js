@@ -58,7 +58,7 @@ function Home() {
           src="https://vsirgaming.vercel.app/VSIR"
             title="IFrame 2"
             id="iframe2"
-            style={{ position: 'absolute', top: 60, right: 0, width: '39%', height: '39%' }}
+            style={{ position: 'absolute', top: "90px", right: '30px', width: '35%', height: '35%' }}
           ></iframe>
         </div>
       </section>
