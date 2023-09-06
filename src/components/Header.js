@@ -30,10 +30,10 @@ function Header({ handlePageChange, currentPage }) {
   return (
     <header
       style={{
-        display: 'none',
+        display: 'flex',
         alignItems: 'center',
-        color: '#ffffff',
-        backgroundColor: '#000000',
+        color: 'none',
+        backgroundColor: 'none',
         position: 'relative',
         transform: `translateY(${isHeaderVisible ? 0 : '-100%'})`,
         transition: 'transform 0.3s ease', // Adjust the duration and easing as needed
@@ -47,11 +47,7 @@ function Header({ handlePageChange, currentPage }) {
           color: '#ffffff',
         }}
       >
-        <a href="/" style={{ display: 'block' }}>
-          <img src="./img/vsnlogo.png" style={{ width: '70px', marginLeft: '30px' }} alt="Logo" />
-        </a>
       </h1>
-      <Navbar handlePageChange={handlePageChange} currentPage={currentPage} />
     </header>
   );
 }
